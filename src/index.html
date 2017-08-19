@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Amir Mobile</title>
+	<script type="text/javascript">
+		(function(){var UA=navigator.userAgent,isAndroid=/android|adr/gi.test(UA),isIos=/iphone|ipod|ipad/gi.test(UA)&&!isAndroid,isMobile=isAndroid||isIos;var docEl=document.documentElement,maxwidth=docEl.dataset.mw||750,dpr=isIos?Math.min(window.devicePixelRatio,3):1,scale=1/dpr,tid;docEl.removeAttribute("data-mw");docEl.dataset.dpr=dpr;metaEl=document.createElement("meta");metaEl.name="viewport";metaEl.content=fillScale(scale);docEl.firstElementChild.appendChild(metaEl);var refreshRem=function(){var width=docEl.getBoundingClientRect().width;if(width/dpr>maxwidth){width=maxwidth*dpr}var rem=parseInt(width/16*2.15);docEl.style.fontSize=rem+"px"};window.addEventListener("resize",function(){clearTimeout(tid);tid=setTimeout(refreshRem,300)},false);window.addEventListener("pageshow",function(e){if(e.persisted){clearTimeout(tid);tid=setTimeout(refreshRem,300)}},false);function fillScale(scale){return"width=device-width,initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale}refreshRem()})();
+	</script>
 </head>
 <body>
 	<div id="app"></div>

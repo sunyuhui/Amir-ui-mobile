@@ -6,13 +6,12 @@
       <div v-for="item in componentsNav" class="item-container">
         <p class="title">{{item.category}}</p>
         <template v-for="components in item.map">
-          <a :href="components.url">{{components.name}}</a>
+          <a :href="components.url" class="component-link">{{components.name}}</a>
         </template>
       </div>
     </div>
     <p class="clear">
-      <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=674565072">移动端设计规范</a>
-      <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=504677791">PC端设计规范</a>
+      <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=554056342">移动端设计规范</a>
     </p>
     
   </div>
@@ -33,36 +32,39 @@
 <style lang="less" scoped>
 @mainColor: #3dc6b6;
 .container {
-  // width:100%;
-
+  margin:20px;
   .title {
-    font-size: 30px;
+    font-size: 30px; /*px*/
+    margin:0;
   }
 
   a {
-    font-size: 14px;
+    font-size: 14px; /*px*/
     text-decoration: none;
     color:#000;
+    display: block;
+    text-align: center;
   }
 
   .all-demos {
     margin-bottom: 20px;
 
     .item-container {
-      // width: 100%;
-      margin-bottom: 20px;
+      margin-top: 20px;
       .title {
-        font-size: 20px;
+        font-size: 20px; /*px*/
         color:@mainColor;
+        margin: 20px 0;
       }
-      a {
+      .component-link {
         display: block;
         color:#000;
         border-radius: 4px;
         margin-bottom: 5px;
+        background: @mainColor;
+        text-align: left;
       }
     }
   }
-
 }
 </style>

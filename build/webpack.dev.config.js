@@ -26,10 +26,10 @@ module.exports = {
 					postcss: [
 						require('postcss-cssnext')({browsers: ['last 2 versions', 'Android >= 4.0']}),
 						require('postcss-px2rem')({
-			              baseDpr: 2,
+			              baseDpr: 1,
 			              threeVersion: true,
 			              remVersion: true,
-			              remUnit: 75,
+			              remUnit: 100,
 			              remPrecision: 6
 			            })
 					]

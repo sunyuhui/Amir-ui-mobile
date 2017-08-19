@@ -39,7 +39,7 @@ module.exports = {
 			              baseDpr: 1,
 			              threeVersion: true,
 			              remVersion: true,
-			              remUnit: 75,
+			              remUnit: 100,
 			              remPrecision: 6
 			            })
 					]
